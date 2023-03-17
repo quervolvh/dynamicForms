@@ -46,7 +46,7 @@ export const FormOutput: React.FC<{ data?: providerFormBlock, inView: boolean,}>
     const enumTypes: {
 
         [key: string]: "plain" | "textarea" | "option" | "date" | "checkbox" | "image" | "phone" |
-        "price-field" | "radio" | "file" | "datetime-local"
+        "price-field" | "radio" | "file" | "datetime-local" | "time"
 
     } =
 
@@ -59,6 +59,7 @@ export const FormOutput: React.FC<{ data?: providerFormBlock, inView: boolean,}>
         "phone": "plain",
         "email": "plain",
         "label": "plain",
+        "time": "time",
         "checkbox": "checkbox",
         "radio": "radio",
         "dropdown": "option",
