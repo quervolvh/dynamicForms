@@ -1,0 +1,40 @@
+//1. Configurations and helpers
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
+@import 'abstracts/misc';
+@import 'abstracts/mics_';
+@import 'abstracts/modern-normalize';
+@import 'abstracts/extends';
+
+// 2. Base
+@import 'base/base';
+@import 'base/helpers';
+
+//3. Layout
+@import 'layout/landingLayout';
+@import 'layout/tabLayout';
+
+//4. Components
+@import 'components/button';
+@import 'components/component-header';
+@import 'components/component-holder';
+@import 'components/form-field/custom-checkbox';
+@import 'components/form-field/image';
+@import 'components/form-field/index';
+@import 'components/form-field/pin';
+@import 'components/form-field/phone-box';
+@import 'components/form-field/radio';
+@import 'components/form-field/select';
+@import 'components/form-field/switch';
+@import 'components/modal';
+@import 'components/progress-tab';
+
+
+//5. Pages
+@import 'pages/index';
+@import 'pages/send/confirm-shipment-box';
+@import 'pages/send/process-payment';
+
+//6. Transitions
+@import 'transitions/fadeIn';

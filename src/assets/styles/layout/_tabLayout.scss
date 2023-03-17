@@ -1,0 +1,9 @@
+.tab-layout {
+  &-page {
+    display: none;
+
+    &-active {
+      display: block;
+    }
+  }
+}

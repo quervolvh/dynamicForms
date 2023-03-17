@@ -1,0 +1,94 @@
+.form-field-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: $inputBorder;
+  padding: 20px;
+  height: 206px;
+
+  &-title {
+    color: color(dark);
+  }
+
+  input {
+    display: none;
+  }
+
+  p {
+    color: color(dark);
+  }
+
+  .button {
+    transition: 0.2s ease;
+  }
+
+  .button:hover {
+    background: darken(color(primary), 5);
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // height: 90px;
+    overflow: hidden;
+    color: color(white);
+    transition: color 0.2s, background 0.2s;
+    transition-timing-function: ease;
+
+    &.darken,
+    &:hover {
+      background: lighten(color(dark), 80);
+    }
+  }
+
+  &.hide-drop-zone {
+    display: flex;
+    align-items: center;
+
+    p {
+      margin-left: 10px;
+    }
+  }
+
+  &.hide-drop-zone > div {
+    justify-content: flex-start;
+    border: 0;
+    height: auto;
+    background: transparent;
+
+    &.darken,
+    &:hover {
+      background: lighten(color(dark), 80);
+    }
+
+    img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  img {
+    border-radius: 100%;
+    border: 2px solid color(input-border);
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+
+  &-none {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &-yes img {
+    width: 60%;
+    height: 60%;
+  }
+}

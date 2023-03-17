@@ -1,0 +1,59 @@
+.shipment {
+  &-processing {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 347px !important;
+
+    h1 {
+      margin-bottom: 24px;
+      text-align: center;
+      color: color(primary);
+    }
+
+    img {
+      display: block;
+      margin: auto;
+    }
+
+    .router-scope {
+      position: absolute;
+      top: -1px;
+      left: 0;
+      border-top-right-radius: 12px;
+      border-top-left-radius: 12px;
+      width: 100%;
+      overflow: hidden;
+      background: color(select-box);
+    }
+
+    &-payment-error-img-box img {
+      height: 305px;
+    }
+
+    &-payment-success {
+      @include media-query(non-mobile) {
+        margin: 88px auto 100px;
+      }
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 28px auto 50px;
+      max-width: 530px;
+
+      img {
+        height: 400px;
+      }
+
+      p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: 400;
+      }
+    }
+  }
+}

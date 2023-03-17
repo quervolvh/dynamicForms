@@ -1,0 +1,26 @@
+.confirm-shipment-box {
+  .pricing-img-box img {
+    width: 100%;
+  }
+
+  .pricing-box-amount {
+    margin: auto;
+    width: max-content;
+
+    .view-formatter p {
+      text-align: center;
+    }
+
+    .view-formatter-title-box p {
+      @include font-size-override(large);
+      width: 100%;
+    }
+
+    .view-formatter-regular-value {
+      @include font-size-override(xx-large);
+      width: 100%;
+      line-height: 1.1;
+      font-family: $header-font;
+    }
+  }
+}
