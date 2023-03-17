@@ -1,23 +1,9 @@
 {
     "cSpell.words": [
-        "accesstoken",
-        "Airtel",
-        "behaviour",
-        "chartjs",
         "csrf",
-        "deliveryimage",
-        "firstname",
-        "geocode",
         "lastname",
         "litepicker",
         "otpauth",
         "pdfmake",
-        "receiverstate",
-        "senderstate",
-        "shipmenttype",
-        "Shypdeck",
-        "totp",
-        "Ussd",
-        "vehicletype"
     ]
 }

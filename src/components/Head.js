@@ -3,27 +3,10 @@ import Head from 'next/head';
 
 export const HtmlHead = ({ title }) => {
   const description =
-    `Shyptech is a delivery service platform where users can access a variety of reliable` +
-    `and trusted delivery companies or agents to handle their deliveries.`;
+    `Assessment`;
 
-  const link = 'http://www.shyptech.com';
-  const logo = 'https://res.cloudinary.com/bohairs/image/upload/v1662357024/shypdeck/Group_3_3_tfyjup.png';
-
-  const seoAttributes = `{
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Shyptech",
-    "alternateName": ["Shyptech"],
-    "url": "http://www.shyptech.com",
-    "sameAs": ["http://web.shyptech.com"],
-
-    "logo": "https://res.cloudinary.com/bohairs/image/upload/v1662357024/shypdeck/Group_3_3_tfyjup.png",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "__",
-      "contactType": "customer service"
-    }
-  }`;
+  const link = '';
+  const logo = 'favicon.ico';
 
   return (
     <Head>
@@ -51,8 +34,6 @@ export const HtmlHead = ({ title }) => {
           ? 'window.__REACT_DEVTOOLS_GLOBAL_HOOK__.inject = function(){}'
           : ''}
       </script>
-
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: seoAttributes }} />
 
       <link
         rel="stylesheet"
