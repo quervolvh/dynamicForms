@@ -19,8 +19,6 @@ const Send: React.FC<Props> = ({}) => {
 
         setState((prevState) => ({ ...prevState, json: data }));
 
-        // router.push("send?view=fill")
-
     };
 
     return (
