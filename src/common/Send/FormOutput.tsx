@@ -257,7 +257,7 @@ export const FormOutput: React.FC<{ data?: providerFormBlock, inView: boolean,}>
 
                                     <div className="form-field-group-buttons">
 
-                                        {form?.pages[state.page].actions.filter((item) => item.label !== "Next Page").map((item) =>
+                                        {form?.pages[state.page]?.actions?.map((item) =>
 
                                             <Button
 
